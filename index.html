@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symone Carter - Portfolio</title>
+    <style>
+        /* Base Styles */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+            background-color: #f9fbfd;
+        }
+        
+        /* Typography & Layout */
+        header { 
+            text-align: center; 
+            margin-bottom: 40px; 
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        h1 { 
+            color: #1a365d; 
+            font-size: 2.5em; 
+            margin-bottom: 10px; 
+        }
+        h2 { 
+            color: #2b6cb0; 
+            border-bottom: 2px solid #e2e8f0; 
+            padding-bottom: 8px; 
+            margin-top: 35px; 
+            font-size: 1.5em; 
+        }
+        h3 { 
+            color: #2d3748; 
+            font-size: 1.2em; 
+            margin-bottom: 2px; 
+        }
+        p {
+            color: #4a5568;
+        }
+        ul { 
+            padding-left: 20px; 
+            margin-top: 8px; 
+            color: #4a5568; 
+        }
+        li { 
+            margin-bottom: 8px; 
+        }
+
+        /* Header Contact Info */
+        .contact-info { 
+            display: flex; 
+            justify-content: center; 
+            gap: 15px; 
+            flex-wrap: wrap; 
+            color: #4a5568; 
+            margin-top: 10px; 
+            font-size: 0.95em;
+        }
+        .contact-info a { 
+            color: #3182ce; 
+            text-decoration: none; 
+            font-weight: 500;
+        }
+        .contact-info a:hover { 
+            text-decoration: underline; 
+        }
+
+        /* Flexbox Headers for Jobs and Education */
+        .flex-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: baseline; 
+            flex-wrap: wrap; 
+            margin-top: 20px; 
+        }
+        .subtitle { 
+            font-style: italic; 
+            color: #4a5568; 
+            font-weight: 500; 
+        }
+        .date { 
+            color: #718096; 
+            font-size: 0.9em; 
+            font-weight: bold;
+        }
+
+        /* Skills Grid */
+        .skills-grid { 
+            display: grid; 
+            grid-template-columns: 180px 1fr; 
+            gap: 10px; 
+            margin-top: 15px; 
+            color: #4a5568;
+        }
+        .skill-category { 
+            font-weight: bold; 
+            color: #2d3748; 
+        }
+
+        /* Responsive Design */
+        @media (max-width: 650px) { 
+            .skills-grid { 
+                grid-template-columns: 1fr; 
+                gap: 2px; 
+                margin-bottom: 15px;
+            } 
+            .flex-header { 
+                flex-direction: column; 
+            } 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Symone Carter</h1>
+        <div class="contact-info">
+            <span>Location: Los Angeles, CA</span>
+            <span>Phone: +1 602-317-0158</span>
+            <a href="mailto:cartersymone643@gmail.com">Email: cartersymone643@gmail.com</a>
+            <a href="https://www.linkedin.com/in/carter-symone-b183a3420/" target="_blank">LinkedIn</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p>Visionary and results-driven Senior Computer Scientist with over 15 years of experience in distributed systems, cloud architecture, and machine learning integration. Proven track record of leading cross-functional engineering teams to scale enterprise-level applications, optimize system latency by up to 40%, and deliver high-impact software solutions. Adept at translating complex business requirements into robust, scalable technical architectures. Passionate about mentoring engineering talent and fostering a culture of continuous integration and deployment (CI/CD).</p>
+    </section>
+
+    <section>
+        <h2>Core Competencies</h2>
+        <div class="skills-grid">
+            <div class="skill-category">Languages:</div>
+            <div>Java, Python, C++, Go, JavaScript/TypeScript, SQL, Rust</div>
+            
+            <div class="skill-category">Cloud & Infrastructure:</div>
+            <div>AWS (EC2, S3, Lambda, EKS), Google Cloud Platform (GCP), Azure, Docker, Kubernetes, Terraform</div>
+            
+            <div class="skill-category">Frameworks & Libraries:</div>
+            <div>Spring Boot, React, Node.js, TensorFlow, PyTorch, Apache Kafka, Hadoop, Spark</div>
+            
+            <div class="skill-category">Database Systems:</div>
+            <div>PostgreSQL, MongoDB, Cassandra, Redis, Elasticsearch</div>
+            
+            <div class="skill-category">Methodologies:</div>
+            <div>Agile/Scrum, Microservices Architecture, Test-Driven Development (TDD), System Design</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+        
+        <div class="flex-header">
+            <div>
+                <h3>Principal Software Engineer</h3>
+                <span class="subtitle">Apex Cloud Solutions | San Francisco, CA (Remote)</span>
+            </div>
+            <span class="date">March 2020 - Present</span>
+        </div>
+        <ul>
+            <li>Lead the architectural design and implementation of a next-generation microservices platform that processes over 50 million transactions daily, reducing system downtime by 99.9%.</li>
+            <li>Direct a globally distributed team of 15 senior and mid-level engineers, facilitating sprint planning, code reviews, and architectural overviews.</li>
+            <li>Spearhead the migration of legacy monolithic applications to AWS Kubernetes (EKS), resulting in a 30% reduction in infrastructure costs and accelerating deployment cycles from bi-weekly to daily.</li>
+            <li>Design and implement a real-time data pipeline using Apache Kafka and Apache Spark, enabling machine learning models to provide personalized recommendations with sub-second latency.</li>
+            <li>Establish comprehensive engineering standards and CI/CD pipelines using GitHub Actions, ensuring 90% test coverage across all tier-one services.</li>
+        </ul>
+
+        <div class="flex-header">
+            <div>
+                <h3>Senior Software Engineer</h3>
+                <span class="subtitle">NovaTech Industries | Los Angeles, CA</span>
+            </div>
+            <span class="date">June 2015 - February 2020</span>
+        </div>
+        <ul>
+            <li>Engineered a high-throughput, low-latency API gateway in Go, handling over 100K requests per second during peak traffic periods.</li>
+            <li>Developed predictive analytics features using Python and TensorFlow, increasing user retention by 15% through hyper-personalized content delivery.</li>
+            <li>Optimized complex SQL queries and introduced Redis caching layers, which decreased database load by 45% and improved application response times by 200ms.</li>
+            <li>Mentored 5 junior engineers and interns, conducting weekly pair-programming sessions and guiding them through their first major feature releases.</li>
+            <li>Collaborated tightly with product managers and UX designers to define technical roadmaps and feasibility for new consumer-facing products.</li>
+        </ul>
+
+        <div class="flex-header">
+            <div>
+                <h3>Software Development Engineer II</h3>
+                <span class="subtitle">Horizon E-Commerce | Seattle, WA</span>
+            </div>
+            <span class="date">August 2011 - May 2015</span>
+        </div>
+        <ul>
+            <li>Built and maintained RESTful web services in Java/Spring Boot for the core billing and invoicing platform, ensuring PCI compliance and secure data handling.</li>
+            <li>Integrated third-party payment gateways (Stripe, PayPal), successfully processing over $10M in monthly recurring revenue.</li>
+            <li>Implemented automated integration testing suites that caught 85% of regression bugs before staging deployment.</li>
+            <li>Participated in an on-call rotation, troubleshooting production incidents and writing detailed root-cause analysis (RCA) reports to prevent future occurrences.</li>
+        </ul>
+
+        <div class="flex-header">
+            <div>
+                <h3>Junior Software Engineer</h3>
+                <span class="subtitle">LogicGate Systems | San Jose, CA</span>
+            </div>
+            <span class="date">July 2009 - July 2011</span>
+        </div>
+        <ul>
+            <li>Developed internal dashboard tools using React and Node.js to monitor server health and application metrics.</li>
+            <li>Assisted in migrating the on-premise database to cloud-based PostgreSQL instances.</li>
+            <li>Wrote and maintained extensive API documentation for external developer partners.</li>
+            <li>Refactored legacy C++ codebase to improve maintainability and remove technical debt.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Selected Projects & System Architecture</h2>
+        
+        <div class="flex-header">
+            <h3>Distributed Key-Value Store (Open Source Contribution)</h3>
+        </div>
+        <ul>
+            <li>Authored core replication modules for an open-source distributed database using Rust.</li>
+            <li>Implemented the Raft consensus algorithm to ensure strong consistency across multi-node clusters.</li>
+            <li>Achieved a 15% performance increase in write-heavy workloads compared to the baseline implementation.</li>
+        </ul>
+
+        <div class="flex-header">
+            <h3>AI-Powered Code Review Assistant</h3>
+        </div>
+        <ul>
+            <li>Developed an internal CLI tool utilizing LLMs (Large Language Models) to automatically scan pull requests for security vulnerabilities and style violations.</li>
+            <li>Trained the model on company-specific style guides, reducing manual code review time by 20%.</li>
+        </ul>
+
+        <div class="flex-header">
+            <h3>Enterprise Identity Access Management (IAM) System</h3>
+        </div>
+        <ul>
+            <li>Architected a custom OAuth2.0 / OpenID Connect provider for a suite of internal applications.</li>
+            <li>Designed role-based access control (RBAC) schemas capable of resolving permissions for 100,000+ internal users in under 50ms.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Patents & Publications</h2>
+        <ul>
+            <li><strong>Patent: System and Method for Dynamic Load Balancing in Microservices</strong> - US Patent No. 10987654, Granted 2021. Co-inventor of a novel algorithm for routing traffic in highly congested cloud environments.</li>
+            <li><strong>Publication: Scaling Distributed Databases in Multi-Cloud Environments</strong> - Published in the Journal of Cloud Computing, 2019. Explored the latency trade-offs between various consensus algorithms when deployed across geographically distant AWS and GCP regions.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="flex-header">
+            <div>
+                <h3>Master of Science in Computer Science</h3>
+                <span class="subtitle">University of California, Los Angeles (UCLA), Los Angeles, CA</span>
+            </div>
+            <span class="date">2009</span>
+        </div>
+        <ul>
+            <li>Specialization: Distributed Systems and Machine Learning</li>
+            <li>Thesis: Optimizing Latency in Geographically Distributed Key-Value Stores</li>
+            <li>GPA: 3.9/4.0</li>
+        </ul>
+
+        <div class="flex-header">
+            <div>
+                <h3>Bachelor of Science in Computer Science</h3>
+                <span class="subtitle">University of California, Berkeley (UCB), Berkeley, CA</span>
+            </div>
+            <span class="date">2007</span>
+        </div>
+        <ul>
+            <li>Honors: Cum Laude</li>
+            <li>Relevant Coursework: Advanced Algorithms, Data Structures, Operating Systems, Computer Networks.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Certifications & Awards</h2>
+        <ul>
+            <li>AWS Certified Solutions Architect - Professional (Valid through 2027)</li>
+            <li>Google Cloud Certified - Professional Cloud Developer (Valid through 2026)</li>
+            <li>Hackathon Winner: First Place at TechCrunch Disrupt for developing a decentralized voting application prototype.</li>
+            <li>Internal Award: "Apex Engineering Excellence Award" for successfully averting a critical data loss event during a major outage.</li>
+        </ul>
+    </section>
+</body>
+</html>
